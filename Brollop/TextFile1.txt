@@ -1,0 +1,27 @@
+﻿Inloggnings sida (start)
+
+      -Hvudsida-
+Startsida - Bröllops inbjudan ## Login
+Bröllops info - VIP ## Info
+Kartor / plateser / tider ## Location
+OSA - Dropdown (Musik, Kommer Ja/nej, Allergi) 
+Love story?
+Kontakt ## Contact
+
+      - Admin -
+Data sida
+
+
+--Inbjudan (Familj)--
+FamNamn
+password
+antal personer
+
+-- Person --
+allergier
+kommer?
+Musik
+	
+
+
+
