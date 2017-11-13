@@ -9,6 +9,7 @@ namespace Brollop.Models.ViewModels
     public class AdminViewModel
     {
         public List<Invitation> Invitations { get; set; }
+        public List<Guest> Guests { get; set; }
         public SiteSetting SiteSetting { get; set; }
         //public InvitationModel PageInvitation { get; set; }
         //public List<VIP_Model> VIP_Perssons { get; set; }

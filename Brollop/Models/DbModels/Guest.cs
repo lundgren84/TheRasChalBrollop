@@ -14,7 +14,7 @@ namespace Brollop.Models.DbModels
     {
         public int Id { get; set; }
         public string FullName { get; set; }
-        public GuestStatus OSAStatus { get; set; }
+        public GuestStatus OsaStatus { get; set; }
         public string Song { get; set; }
         public string Allergy { get; set; }
         public int InvitationRefId { get; set; }

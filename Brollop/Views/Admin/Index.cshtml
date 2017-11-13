@@ -6,8 +6,6 @@
 
 <nav class="navbar navbar-default navbar-fixed white no-background bootsnav text-uppercase">
     <!-- Start Top Search -->
-    
-
     <!-- End Top Search -->
     <div class="container">
         <!-- Start Atribute Navigation -->
@@ -74,3 +72,81 @@
 
 <h2>Admin Page</h2>
 
+<div class="row">
+    <div class="col-sm-6">
+        <p>Invitation overview</p>
+    </div>
+    <div class="col-sm-6">
+        <p>Guest overview</p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <p>Invitations</p>
+        <p>Filter search</p>   
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Username</th>
+                <th>Password</th>
+                <th> No awnser / Not comming / Comming</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var invitation in @Model.Invitations)
+            {
+                <tr>
+                    <td>@invitation.Username</td>
+                    <td>@invitation.Password</td>
+                    <td> 2 / 0 / 1 </td>
+                    <td>
+                        @Html.ActionLink("Add guest", "", "");
+                        @Html.ActionLink("Edit", "", "");
+                        @Html.ActionLink("Delete", "", "");
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <p>Invitations</p>
+        <p>Filter search</p>   
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Invitation</th>
+                <th>Status</th>
+                <th>Songs</th>
+                <th>Allergy</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var guest in @Model.Guests)
+            {
+                <tr>
+                    <td>@guest.FullName</td>
+                    <td>@guest.Invitation.Username</td>
+                    <td>@guest.OsaStatus</td>
+                    <td>@guest.Song</td>
+                    <td>@guest.Allergy</td>
+                   
+                    <td>
+                        @Html.ActionLink("Edit", "", "");
+                        @Html.ActionLink("Delete", "", "");
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
