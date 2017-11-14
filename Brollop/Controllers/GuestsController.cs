@@ -18,7 +18,8 @@ namespace Brollop.Controllers
         // GET: Guests
         public ActionResult Index()
         {
-            return View(db.Guests.ToList());
+            var guests = db.Guests.Include(g => g.Invitation);
+            return View(guests.ToList());
         }
 
         // GET: Guests/Details/5
@@ -39,6 +40,7 @@ namespace Brollop.Controllers
         // GET: Guests/Create
         public ActionResult Create()
         {
+            ViewBag.InvitationRefId = new SelectList(db.Invitations, "Id", "Username");
             return View();
         }
 
@@ -47,7 +49,7 @@ namespace Brollop.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FullName,OSAStatus,Song")] Guest guest)
+        public ActionResult Create([Bind(Include = "Id,FullName,OSAStatus,Song,Allergy,InvitationRefId")] Guest guest)
         {
             if (ModelState.IsValid)
             {
@@ -56,6 +58,7 @@ namespace Brollop.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.InvitationRefId = new SelectList(db.Invitations, "Id", "Username", guest.InvitationRefId);
             return View(guest);
         }
 
@@ -71,6 +74,7 @@ namespace Brollop.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.InvitationRefId = new SelectList(db.Invitations, "Id", "Username", guest.InvitationRefId);
             return View(guest);
         }
 
@@ -79,7 +83,7 @@ namespace Brollop.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FullName,OSAStatus,Song")] Guest guest)
+        public ActionResult Edit([Bind(Include = "Id,FullName,OSAStatus,Song,Allergy,InvitationRefId")] Guest guest)
         {
             if (ModelState.IsValid)
             {
@@ -87,6 +91,7 @@ namespace Brollop.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.InvitationRefId = new SelectList(db.Invitations, "Id", "Username", guest.InvitationRefId);
             return View(guest);
         }
 

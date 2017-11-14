@@ -4,71 +4,8 @@
 }
 
 
-<nav class="navbar navbar-default navbar-fixed white no-background bootsnav text-uppercase">
-    <!-- Start Top Search -->
-    <!-- End Top Search -->
-    <div class="container">
-        <!-- Start Atribute Navigation -->
-        <div class="attr-nav">
-            <ul>
-                <li title="Om svar anhålles" class="search"><a href="#"><b>Back to page</b></a></li>
+@Html.Partial("_AdminNav")
 
-            </ul>
-        </div>
-        <!-- End Atribute Navigation -->
-        <!-- Start Header Navigation -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand" href="index.html">
-                <img src="~/assets/images/logo.png" class="logo logo-display" alt="">
-                <img src="~/assets/images/logo-black.png" class="logo logo-scrolled" alt="">
-            </a>
-        </div>
-        <!-- End Header Navigation -->
-        <!-- Collect the nav links, forms, and other content for toggling -->
-
-
-        <div class="collapse navbar-collapse" id="navbar-menu">
-            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                <li><a href="#pagestart">Home</a></li>
-                <li><a href="#info">Info</a></li>
-                <li><a href="#vip">VIP</a></li>
-                <li><a href="#lovestory">OurStory</a></li>
-                <li><a href="#locations">Locations</a></li>
-                @if (User.IsInRole("Admin"))
-                {
-                    <li>@Html.ActionLink("Admin", "Index", "Admin")</li>
-                }
-                <li>@Html.ActionLink("Logout", "Logout", "Authentication")</li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-
-
-    </div>
-
-</nav>
-<section id="hello" class="home bg-mega">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="main_home text-center">
-                <div class="home_text">
-                    <h4 class="text-white text-uppercase">Its time for 2an</h4>
-                    <h1 class="text-white text-uppercase">Administration page</h1>
-                    <div class="separator"></div>
-                    <h5 class=" text-uppercase text-white">
-                        <em>
-                            One day, the dream will come true and all seed will swim free in her intestinal.
-                            Love in higher grades.
-                        </em>
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <h2>Admin Page</h2>
 

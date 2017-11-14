@@ -47,7 +47,7 @@ namespace Brollop.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Password,Admin")] Invitation invitation)
+        public ActionResult Create([Bind(Include = "Id,Username,Password,Admin")] Invitation invitation)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace Brollop.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Password,Admin")] Invitation invitation)
+        public ActionResult Edit([Bind(Include = "Id,Username,Password,Admin")] Invitation invitation)
         {
             if (ModelState.IsValid)
             {

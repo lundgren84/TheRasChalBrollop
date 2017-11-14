@@ -6,7 +6,6 @@
 
 <h2>Create</h2>
 
-
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
@@ -24,10 +23,10 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.OsaStatus, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.OSAStatus, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EnumDropDownListFor(model => model.OsaStatus, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.OsaStatus, "", new { @class = "text-danger" })
+                @Html.EnumDropDownListFor(model => model.OSAStatus, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.OSAStatus, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -36,6 +35,22 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.Song, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Song, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Allergy, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Allergy, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Allergy, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.InvitationRefId, "InvitationRefId", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("InvitationRefId", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.InvitationRefId, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -50,7 +65,3 @@
 <div>
     @Html.ActionLink("Back to List", "Index")
 </div>
-
-@*@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}*@

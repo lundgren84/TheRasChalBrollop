@@ -918,8 +918,9 @@ Nav Menu style
 .model-banner{
     background: url(../images/background/model-bg.jpg) no-repeat bottom center;
 }
-.contact-banner{
-    background: url(../images/background/contact-bg.jpg) no-repeat bottom center;
+.contact-banner {
+    background: url(../napoleon/swAdmin.jpg) no-repeat bottom center;
+    /*background: url(../images/background/contact-bg.jpg) no-repeat bottom center;*/
 }
 .about-banner{
     background: url(../images/background/about-bg.jpg) no-repeat bottom center;

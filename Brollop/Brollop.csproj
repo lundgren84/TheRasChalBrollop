@@ -339,6 +339,7 @@
     <Content Include="assets\napoleon\148_148.png" />
     <Content Include="assets\napoleon\370_292.png" />
     <Content Include="assets\napoleon\435_570.png" />
+    <Content Include="assets\napoleon\swAdmin.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -396,21 +397,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Invitations\Create.cshtml" />
-    <Content Include="Views\Invitations\Delete.cshtml" />
-    <Content Include="Views\Invitations\Details.cshtml" />
-    <Content Include="Views\Invitations\Edit.cshtml" />
-    <Content Include="Views\Invitations\Index.cshtml" />
-    <Content Include="Views\SiteSettings\Create.cshtml" />
-    <Content Include="Views\SiteSettings\Delete.cshtml" />
-    <Content Include="Views\SiteSettings\Details.cshtml" />
-    <Content Include="Views\SiteSettings\Edit.cshtml" />
-    <Content Include="Views\SiteSettings\Index.cshtml" />
-    <Content Include="Views\Guests\Create.cshtml" />
-    <Content Include="Views\Guests\Delete.cshtml" />
-    <Content Include="Views\Guests\Details.cshtml" />
-    <Content Include="Views\Guests\Edit.cshtml" />
-    <Content Include="Views\Guests\Index.cshtml" />
     <Content Include="Views\Authentication\Register.cshtml" />
     <Content Include="Views\Authentication\Login.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
@@ -421,6 +407,22 @@
     <Content Include="Views\Shared\partials\_Lovestory.cshtml" />
     <Content Include="Views\Shared\partials\_Locations.cshtml" />
     <Content Include="Views\Shared\partials\_OSA.cshtml" />
+    <Content Include="Views\Invitations\Create.cshtml" />
+    <Content Include="Views\Invitations\Delete.cshtml" />
+    <Content Include="Views\Invitations\Details.cshtml" />
+    <Content Include="Views\Invitations\Edit.cshtml" />
+    <Content Include="Views\Invitations\Index.cshtml" />
+    <Content Include="Views\Guests\Create.cshtml" />
+    <Content Include="Views\Guests\Delete.cshtml" />
+    <Content Include="Views\Guests\Details.cshtml" />
+    <Content Include="Views\Guests\Edit.cshtml" />
+    <Content Include="Views\Guests\Index.cshtml" />
+    <Content Include="Views\SiteSettings\Create.cshtml" />
+    <Content Include="Views\SiteSettings\Delete.cshtml" />
+    <Content Include="Views\SiteSettings\Details.cshtml" />
+    <Content Include="Views\SiteSettings\Edit.cshtml" />
+    <Content Include="Views\SiteSettings\Index.cshtml" />
+    <Content Include="Views\Shared\_AdminNav.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

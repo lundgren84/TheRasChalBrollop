@@ -11,6 +11,14 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.Invitation.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Invitation.Username)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.FullName)
         </dt>
 
@@ -19,11 +27,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.OsaStatus)
+            @Html.DisplayNameFor(model => model.OSAStatus)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.OsaStatus)
+            @Html.DisplayFor(model => model.OSAStatus)
         </dd>
 
         <dt>
@@ -32,6 +40,14 @@
 
         <dd>
             @Html.DisplayFor(model => model.Song)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Allergy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Allergy)
         </dd>
 
     </dl>
