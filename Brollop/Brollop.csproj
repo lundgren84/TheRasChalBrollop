@@ -364,6 +364,7 @@
     <Content Include="assets\fonts\icofont.eot" />
     <Content Include="assets\fonts\icofont.ttf" />
     <Content Include="assets\fonts\icofont.woff" />
+    <None Include="Properties\PublishProfiles\RasChabrollop - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -385,7 +386,9 @@
     <Content Include="TemplatePages\model.html" />
     <Content Include="TemplatePages\service.html" />
     <Content Include="TextFile1.txt" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
